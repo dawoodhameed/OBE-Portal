@@ -1,5 +1,5 @@
 export const adminMenu = [
-	{
+	/* {
 		"id": 1,
 		"icon": "credit-card",
 		"label": "Payments",
@@ -40,10 +40,10 @@ export const adminMenu = [
 		"icon": "gear",
 		"label": "Settings",
 		"to": "/setting"
-	}
+	} */
 ]
 export const universityMenu = [
-	{
+	/*{
 		"id": 1,
 		"icon": "dashboard",
 		"label": "Dashboard",
@@ -60,26 +60,26 @@ export const universityMenu = [
 		"icon": "user-circle-o",
 		"label": "Staff",
 		"to": "/staff"
-	},
+	}, */
 	{
 		"id": 4,
 		"icon": "users",
 		"label": "Students",
 		"to": "/students"
 	},
-	{
+	/* {
 		"id": 5,
 		"icon": "users",
 		"label": "Departments",
 		"to": "/departments"
-	},
+	}, */
 	{
 		"id": 6,
 		"icon": "graduation-cap",
 		"label": "Courses",
 		"to": "/courses"
 	},
-	{
+	/* {
 		"id": 7,
 		"icon": "book",
 		"label": "Library",
@@ -130,5 +130,5 @@ export const universityMenu = [
 		"icon": "camera-retro",
 		"label": "Gallery",
 		"to": "/gallery"
-	},
+	}, */
 ];

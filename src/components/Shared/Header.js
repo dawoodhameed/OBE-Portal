@@ -44,18 +44,18 @@ class Header extends Component {
                 id="page_top">
                 <div className="container-fluid">
                     <div className="page-header">
-                        <div className="left">
+                        {/* <div className="left">
                             <div className="input-group">
                                 <input type="text" className="form-control" placeholder="What you want to find" />
                                 <div className="input-group-append">
                                     <button className={`btn btn-outline-secondary${boxShadow ? ' box_shadow' : ''}`} type="button">Search</button>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="right">
                             <ul className="nav nav-pills">
                                 {/* <li className="nav-item dropdown" onBlur={() => this.setState({ pagesMenu: false })}> */}
-                                <li className="nav-item dropdown">
+                                {/* <li className="nav-item dropdown">
                                     <span className="nav-link dropdown-toggle" onClick={() => pagesMenuAction(!pagesMenu)}>Pages</span>
                                     <div className={`dropdown-menu${pagesMenu ? ' show' : ''}`}>
                                         <Link className="dropdown-item" to="/pageEmpty">Empty page</Link>
@@ -65,9 +65,9 @@ class Header extends Component {
                                         <Link className="dropdown-item" to="/pageInvoices">Invoices</Link>
                                         <Link className="dropdown-item" to="/pagePricing">Pricing</Link>
                                     </div>
-                                </li>
+                                </li> */}
                                 {/* <li className="nav-item dropdown" onBlur={() => this.setState({ authMenu: false })}> */}
-                                <li className="nav-item dropdown">
+                                {/* <li className="nav-item dropdown">
                                     <span className="nav-link dropdown-toggle" onClick={() => authMenuAction(!authMenu)} >Auth</span>
                                     <div className={`dropdown-menu${authMenu ? ' show' : ''}`}>
                                         <Link className="dropdown-item" to="/login">Login</Link>
@@ -77,10 +77,10 @@ class Header extends Component {
                                         <Link className="dropdown-item" to="/notfound">404 error</Link>
                                         <Link className="dropdown-item" to="/internalserver">500 error</Link>
                                     </div>
-                                </li>
+                                </li> */}
                             </ul>
                             <div className="notification d-flex">
-                                <div className={`dropdown d-flex${languageMenu ? ' show' : ''}`}>
+                                {/* <div className={`dropdown d-flex${languageMenu ? ' show' : ''}`}>
                                     <span className="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" onClick={() => languageMenuAction(!languageMenu)}><i className="fa fa-language"></i></span>
                                     <div className={`dropdown-menu dropdown-menu-right dropdown-menu-arrow${languageMenu ? ' show dLang' : ''}`}>
                                         <span className="dropdown-item" >
@@ -97,8 +97,8 @@ class Header extends Component {
                                             <img className="w20 mr-2" src="../assets/images/flags/bl.svg" alt="avatar" />France
 											</span>
                                     </div>
-                                </div>
-                                <div className={`dropdown d-flex${mailMenu ? ' show' : ''}`}>
+                                </div> */}
+                                {/* <div className={`dropdown d-flex${mailMenu ? ' show' : ''}`}>
                                     <span className="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" onClick={() => mailMenuAction(!mailMenu)}><i className="fa fa-envelope"></i>
                                         <span className="badge badge-success nav-unread"></span>
                                     </span>
@@ -158,8 +158,8 @@ class Header extends Component {
                                             className="dropdown-item text-center text-muted-dark readall">Mark all as
                                             read</a>
                                     </div>
-                                </div>
-                                <div className={`dropdown d-flex${notificationMenu ? ' show' : ''}`}>
+                                </div> */}
+                                {/* <div className={`dropdown d-flex${notificationMenu ? ' show' : ''}`}>
                                     <span className="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" onClick={() => notificationMenuAction(!notificationMenu)}><i className="fa fa-bell"></i><span
                                         className="badge badge-primary nav-unread"></span></span>
                                     <div className={`dropdown-menu dropdown-menu-right dropdown-menu-arrow${notificationMenu ? ' show dNoti' : ''}`}>
@@ -211,8 +211,8 @@ class Header extends Component {
                                             className="dropdown-item text-center text-muted-dark readall">Mark all as
                                             read</span>
                                     </div>
-                                </div>
-                                <div className={`dropdown d-flex${profileMenu ? ' show' : ''}`} >
+                                </div> */}
+                                {/* <div className={`dropdown d-flex${profileMenu ? ' show' : ''}`} >
                                     <span className="chip ml-3" onClick={() => profileMenuAction(!profileMenu)}>
                                         <span className="avatar"
                                             style={{ backgroundImage: "url(../assets/images/xs/avatar5.jpg)" }}></span>
@@ -233,7 +233,7 @@ class Header extends Component {
                                         <Link className="dropdown-item" to="/login"><i
                                             className="dropdown-icon fe fe-log-out"></i> Sign out</Link>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

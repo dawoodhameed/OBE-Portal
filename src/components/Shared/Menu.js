@@ -82,29 +82,29 @@ class Menu extends Component {
 									<span onClick={() => openLeftSidebarAction(!toggleLeftBar)} className="nav-link icon menu_toggle"><i
 										className="fe fe-align-center"></i>
 									</span>
-									<Link to="pageSearch" className="nav-link icon">
+									{/* <Link to="pageSearch" className="nav-link icon">
 										<i className="fe fe-search" data-toggle="tooltip" data-placement="right" title="Search..."></i>
-									</Link>
-									<Link to="email" className="nav-link icon app_inbox">
+									</Link> */}
+									{/* <Link to="email" className="nav-link icon app_inbox">
 										<i className="fe fe-inbox" data-toggle="tooltip" data-placement="right" title="Inbox"></i>
-									</Link>
-									<Link to="filemanager" className="nav-link icon app_file xs-hide">
+									</Link> */}
+									{/* <Link to="filemanager" className="nav-link icon app_file xs-hide">
 										<i className="fe fe-folder" data-toggle="tooltip" data-placement="right" title="File Manager"></i>
-									</Link>
-									<Link to="socialMedia" className="nav-link icon xs-hide">
+									</Link> */}
+									{/* <Link to="socialMedia" className="nav-link icon xs-hide">
 										<i className="fe fe-share-2" data-toggle="tooltip" data-placement="right" title="Social Media"></i>
-									</Link>
+									</Link> */}
 
 									{/* <span onClick={() => this.openThemeBarAction(!toggleThemeBar)} className="nav-link icon theme_btn"><i className="fe fe-feather"></i></span> */}
-									<span onClick={() => openSettingbarAction(!toggleSettingbar)} className="nav-link icon settingbar"><i className="fe fe-settings"></i></span>
+									{/* <span onClick={() => openSettingbarAction(!toggleSettingbar)} className="nav-link icon settingbar"><i className="fe fe-settings"></i></span> */}
 								</div>
 							</div>
-							<div className="hright">
+							{/* <div className="hright">
 								<span onClick={() => openRightSidebarAction(!toggleRightBar)} className="nav-link icon right_tab"><i className="fe fe-align-right"></i></span>
 								<Link to="login" className="nav-link icon settingbar">
 									<i className="fe fe-power"></i>
 								</Link>
-							</div>
+							</div> */}
 						</div>
 					</div>
 					<div id="rightsidebar" className={`right_sidebar ${toggleSettingbar ? 'open' : ''}`}>

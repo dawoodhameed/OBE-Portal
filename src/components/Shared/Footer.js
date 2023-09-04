@@ -9,8 +9,8 @@ export default class Footer extends Component {
 					<div className="container-fluid">
 						<div className="row">
 							<div className="col-md-6 col-sm-12">
-								Copyright © 2019 <a
-									href="https://themeforest.net/user/puffintheme/portfolio">PuffinTheme</a>.
+								{/* Copyright © 2019 <a
+									href="https://themeforest.net/user/puffintheme/portfolio">PuffinTheme</a>. */}
                             </div>
 							<div className="col-md-6 col-sm-12 text-md-right">
 								<ul className="list-inline mb-0">
