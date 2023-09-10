@@ -41,18 +41,181 @@ export default class Students extends Component {
 
     const csvData = [
       [
-        " " , " " , " " , " " , "Assignments" , " " , " " , "Quizzes" , " " , " " , "Mid" , " " , "Final" , " " , " " , " " , " " , " " , " " , " " , " " , " " , " "
+        " ",
+        " ",
+        " ",
+        " ",
+        "Assignments",
+        " ",
+        " ",
+        "Quizzes",
+        " ",
+        " ",
+        "Mid",
+        " ",
+        "Final",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
       ],
       [
-        " " , " " , " " , "CLO-1" , "CLO-1" , "CLO-2" , "CLO-1" , "CLO-1" , "CLO-2" , "CLO-2" , "CLO-1" , "CLO-2" , "CLO-3" , "CLO-3" , " " , " " , " " , " " , " " , " " , " " , " " , " "
+        " ",
+        " ",
+        " ",
+        "CLO-1",
+        "CLO-1",
+        "CLO-2",
+        "CLO-1",
+        "CLO-1",
+        "CLO-2",
+        "CLO-2",
+        "CLO-1",
+        "CLO-2",
+        "CLO-3",
+        "CLO-3",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
       ],
       [
-        "#" , "Enrollment" , "Name" , "#1" , "#2" , "#3" , "#1" , "#2" , "#3" , "#4" , "Q1 & 2" , "Q1" , "Q2" , "Q3" , "CLO-1" , "CLO-2" , "CLO-3" , "PLO-1" , "PLO-2" , "PLO-3" , "Total" , " " , " "
+        "#",
+        "Enrollment",
+        "Name",
+        "#1",
+        "#2",
+        "#3",
+        "#1",
+        "#2",
+        "#3",
+        "#4",
+        "Q1 & 2",
+        "Q1",
+        "Q2",
+        "Q3",
+        "CLO-1",
+        "CLO-2",
+        "CLO-3",
+        "PLO-1",
+        "PLO-2",
+        "PLO-3",
+        "Total",
+        " ",
+        " ",
       ],
       [
-        " " , " " , " " , "5" , "5" , "10" , "2.5" , "2.5" , "2.5" , "2.5" , "20" , "15" , "15" , "20" , "35" , "30" , "35" , " " , " " , " " , " " , "100" , " "
+        " ",
+        " ",
+        " ",
+        "5",
+        "5",
+        "10",
+        "2.5",
+        "2.5",
+        "2.5",
+        "2.5",
+        "20",
+        "15",
+        "15",
+        "20",
+        "35",
+        "30",
+        "35",
+        " ",
+        " ",
+        " ",
+        " ",
+        "100",
+        " ",
       ],
       [
+        "1",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        ,
+        " ",
+      ],
+      [
+        "2",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        ,
+        " ",
+      ],
+      [
+        "3",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        ,
+        " ",
+      ]
+      /* [
         "ROLL NO",
         "NAME",
         "Assignment 1",
@@ -70,7 +233,7 @@ export default class Students extends Component {
       ["A17", "Ken Smith"],
       ["A11", "Corrine M Johnson"],
       ["A12", "Alan Johnson"],
-      ["A23", "John Smith"],
+      ["A23", "John Smith"], */
     ];
 
     /* CSV file changes and update and show error if invalid format uploaded*/
@@ -130,8 +293,10 @@ export default class Students extends Component {
         /* This converts the excel data to JSON fromat */
         const data = XLSX.utils.sheet_to_json(workSheet);
 
+        console.log(data) 
+
         this.setState({
-          excelData: data.slice(0, 10),
+          excelData: data.slice(0, data.length),
         });
 
         console.log("this.state.excelData");
@@ -456,17 +621,483 @@ export default class Students extends Component {
 
                           <tbody>
                             {this.state.excelData.map(
-                              (indiviualExcelData, index) => (
-                                <tr key={index}>
-                                  {Object.keys(indiviualExcelData).map(
-                                    (key) => (
-                                      <td key={key}>
-                                        {indiviualExcelData[key]}
-                                      </td>
-                                    )
-                                  )}
-                                </tr>
-                              )
+                              (indiviualExcelData, index) => {
+                                /*  */
+                                const keysArray =
+                                  Object.keys(indiviualExcelData);
+                                /*  */
+                                return (
+                                  <tr key={index}>
+                                    {keysArray.map((key, secondIndex) => {
+                                      console.log(
+                                        "Indi: " + indiviualExcelData
+                                      );
+                                      console.log("Key: " + key);
+                                      console.log("First Index: " + index);
+                                      console.log(
+                                        "Second Index: " + secondIndex
+                                      );
+                                      console.log(
+                                        "Value: " + indiviualExcelData[key]
+                                      );
+
+                                      if (index > 2 && secondIndex === 14) {
+                                        return (
+                                          <td key={key}>
+                                            {(
+                                              (Number(
+                                                String(
+                                                  indiviualExcelData[
+                                                    keysArray[3]
+                                                  ]
+                                                ).replace(",", ".")
+                                              ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[4]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[6]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[7]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[10]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                )) /
+                                              35
+                                            ).toFixed(3)}
+                                          </td>
+                                        );
+                                      }
+
+                                      if (index > 2 && secondIndex === 15) {
+                                        return (
+                                          <td key={key}>
+                                            {(
+                                              (Number(
+                                                String(
+                                                  indiviualExcelData[
+                                                    keysArray[5]
+                                                  ]
+                                                ).replace(",", ".")
+                                              ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[8]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[9]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[11]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                )) /
+                                              30
+                                            ).toFixed(3)}
+                                          </td>
+                                        );
+                                      }
+
+                                      if (index > 2 && secondIndex === 16) {
+                                        return (
+                                          <td key={key}>
+                                            {(
+                                              (Number(
+                                                String(
+                                                  indiviualExcelData[
+                                                    keysArray[12]
+                                                  ]
+                                                ).replace(",", ".")
+                                              ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[13]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                )) /
+                                              35
+                                            ).toFixed(3)}
+                                          </td>
+                                        );
+                                      }
+
+                                      if (index > 2 && secondIndex === 17) {
+                                        return (
+                                          <td key={key}>
+                                            {(
+                                              (Number(
+                                                String(
+                                                  indiviualExcelData[
+                                                    keysArray[3]
+                                                  ]
+                                                ).replace(",", ".")
+                                              ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[4]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[6]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[7]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[10]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                )) /
+                                              35
+                                            ).toFixed(3)}
+                                          </td>
+                                        );
+                                      }
+
+                                      if (index > 2 && secondIndex === 18) {
+                                        return (
+                                          <td key={key}>
+                                            {(
+                                              (Number(
+                                                String(
+                                                  indiviualExcelData[
+                                                    keysArray[5]
+                                                  ]
+                                                ).replace(",", ".")
+                                              ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[8]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[9]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[11]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                )) /
+                                              30
+                                            ).toFixed(3)}
+                                          </td>
+                                        );
+                                      }
+
+                                      if (index > 2 && secondIndex === 19) {
+                                        return (
+                                          <td key={key}>
+                                            {(
+                                              (Number(
+                                                String(
+                                                  indiviualExcelData[
+                                                    keysArray[12]
+                                                  ]
+                                                ).replace(",", ".")
+                                              ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[13]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                )) /
+                                              35
+                                            ).toFixed(3)}
+                                          </td>
+                                        );
+                                      }
+
+                                      if (index > 2 && secondIndex === 20) {
+                                        return (
+                                          <td key={key}>
+                                            {Math.ceil(
+                                              Number(
+                                                String(
+                                                  indiviualExcelData[
+                                                    keysArray[3]
+                                                  ]
+                                                ).replace(",", ".")
+                                              ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[4]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[5]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[6]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[7]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[8]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[9]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[10]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[11]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[12]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                ) +
+                                                Number(
+                                                  String(
+                                                    indiviualExcelData[
+                                                      keysArray[13]
+                                                    ]
+                                                  ).replace(",", ".")
+                                                )
+                                            )}
+                                          </td>
+                                        );
+                                      }
+
+                                      if (index > 2 && secondIndex === 21) {
+                                        return (
+                                          <td key={key}>
+                                            {Number(
+                                              String(
+                                                indiviualExcelData[keysArray[3]]
+                                              ).replace(",", ".")
+                                            ) +
+                                              Number(
+                                                String(
+                                                  indiviualExcelData[
+                                                    keysArray[4]
+                                                  ]
+                                                ).replace(",", ".")
+                                              ) +
+                                              Number(
+                                                String(
+                                                  indiviualExcelData[
+                                                    keysArray[5]
+                                                  ]
+                                                ).replace(",", ".")
+                                              ) +
+                                              Number(
+                                                String(
+                                                  indiviualExcelData[
+                                                    keysArray[6]
+                                                  ]
+                                                ).replace(",", ".")
+                                              ) +
+                                              Number(
+                                                String(
+                                                  indiviualExcelData[
+                                                    keysArray[7]
+                                                  ]
+                                                ).replace(",", ".")
+                                              ) +
+                                              Number(
+                                                String(
+                                                  indiviualExcelData[
+                                                    keysArray[8]
+                                                  ]
+                                                ).replace(",", ".")
+                                              ) +
+                                              Number(
+                                                String(
+                                                  indiviualExcelData[
+                                                    keysArray[9]
+                                                  ]
+                                                ).replace(",", ".")
+                                              ) +
+                                              Number(
+                                                String(
+                                                  indiviualExcelData[
+                                                    keysArray[10]
+                                                  ]
+                                                ).replace(",", ".")
+                                              ) +
+                                              Number(
+                                                String(
+                                                  indiviualExcelData[
+                                                    keysArray[11]
+                                                  ]
+                                                ).replace(",", ".")
+                                              ) +
+                                              Number(
+                                                String(
+                                                  indiviualExcelData[
+                                                    keysArray[12]
+                                                  ]
+                                                ).replace(",", ".")
+                                              ) +
+                                              Number(
+                                                String(
+                                                  indiviualExcelData[
+                                                    keysArray[13]
+                                                  ]
+                                                ).replace(",", ".")
+                                              )}
+                                          </td>
+                                        );
+                                      }
+
+                                      if (index > 2 && secondIndex === 22) {
+                                        let total =
+                                          Number(
+                                            String(
+                                              indiviualExcelData[keysArray[3]]
+                                            ).replace(",", ".")
+                                          ) +
+                                          Number(
+                                            String(
+                                              indiviualExcelData[keysArray[4]]
+                                            ).replace(",", ".")
+                                          ) +
+                                          Number(
+                                            String(
+                                              indiviualExcelData[keysArray[5]]
+                                            ).replace(",", ".")
+                                          ) +
+                                          Number(
+                                            String(
+                                              indiviualExcelData[keysArray[6]]
+                                            ).replace(",", ".")
+                                          ) +
+                                          Number(
+                                            String(
+                                              indiviualExcelData[keysArray[7]]
+                                            ).replace(",", ".")
+                                          ) +
+                                          Number(
+                                            String(
+                                              indiviualExcelData[keysArray[8]]
+                                            ).replace(",", ".")
+                                          ) +
+                                          Number(
+                                            String(
+                                              indiviualExcelData[keysArray[9]]
+                                            ).replace(",", ".")
+                                          ) +
+                                          Number(
+                                            String(
+                                              indiviualExcelData[keysArray[10]]
+                                            ).replace(",", ".")
+                                          ) +
+                                          Number(
+                                            String(
+                                              indiviualExcelData[keysArray[11]]
+                                            ).replace(",", ".")
+                                          ) +
+                                          Number(
+                                            String(
+                                              indiviualExcelData[keysArray[12]]
+                                            ).replace(",", ".")
+                                          ) +
+                                          Number(
+                                            String(
+                                              indiviualExcelData[keysArray[13]]
+                                            ).replace(",", ".")
+                                          );
+                                        return (
+                                          <td key={key}>
+                                            {
+                                              (total >= 85) ? ("A") : (total >= 80 ? "A-" : (total >= 75 ? "B+" : (total >= 71 ? "B" : (total >= 68 ? "B-" : (total >= 64 ? "C+" : (total >= 60 ? "C" : (total >= 57 ? "C-" : (total >= 53 ? "D+" : (total >= 57 ? "D" : (total >= 50 ? "D" : "F"))))))))))
+                                            }
+                                          </td>
+                                        );
+                                      }
+
+                                      return (
+                                        <td key={key}>
+                                          {indiviualExcelData[key]}
+                                        </td>
+                                      );
+                                    })}
+                                  </tr>
+                                );
+                              }
                             )}
                           </tbody>
                         </Table>
