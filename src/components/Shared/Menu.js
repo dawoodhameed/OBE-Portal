@@ -924,7 +924,7 @@ class Menu extends Component {
 
 					{/* <!-- Start Main leftbar navigation --> */}
 					<div id="left-sidebar" className="sidebar">
-						<h5 className="brand-name">Ericsson<span onClick={() => this.toggleAction()} className={`menu_option float-right${menuGrid ? ' active' : ''}`}><i
+						<h5 className="brand-name">OBE Online Portal<span onClick={() => this.toggleAction()} className={`menu_option float-right${menuGrid ? ' active' : ''}`}><i
 							className="icon-grid font-16" data-toggle="tooltip" data-placement="left"
 							title="Grid & List Toggle"></i></span>
 						</h5>

@@ -407,7 +407,7 @@ export default class Students extends Component {
                           />
                         </td>
                         <td>
-                          <span className="font-16">Ken Smith</span>
+                          <span className="font-16">Hamza</span>
                         </td>
                         {/* <td>Science</td>
 												<td>ken@gmail.com</td>
@@ -429,7 +429,7 @@ export default class Students extends Component {
                           />
                         </td>
                         <td>
-                          <span className="font-16">Gerald K Smith</span>
+                          <span className="font-16">Ahmed</span>
                         </td>
                         {/* <td>M.C.A.</td>
 												<td>Gerald@gmail.com</td>
@@ -451,7 +451,7 @@ export default class Students extends Component {
                           />
                         </td>
                         <td>
-                          <span className="font-16">Ken Smith</span>
+                          <span className="font-16">Dawood</span>
                         </td>
                         {/* <td>Mechanical</td>
 												<td>ken@gmail.com</td>
@@ -473,7 +473,7 @@ export default class Students extends Component {
                           />
                         </td>
                         <td>
-                          <span className="font-16">Alice A Smith</span>
+                          <span className="font-16">Arhum</span>
                         </td>
                         {/* <td>M.B.B.S.</td>
 												<td>Patricia@gmail.com</td>
@@ -495,7 +495,7 @@ export default class Students extends Component {
                           />
                         </td>
                         <td>
-                          <span className="font-16">Ken Smith</span>
+                          <span className="font-16">Sameer</span>
                         </td>
                         {/* <td>Arts</td>
 												<td>ken@gmail.com</td>
@@ -517,7 +517,7 @@ export default class Students extends Component {
                           />
                         </td>
                         <td>
-                          <span className="font-16">Corrine M Johnson</span>
+                          <span className="font-16">Kashan</span>
                         </td>
                         {/* <td>Mechanical</td>
 												<td>Gladys@gmail.com</td>
@@ -539,7 +539,7 @@ export default class Students extends Component {
                           />
                         </td>
                         <td>
-                          <span className="font-16">Alan Johnson</span>
+                          <span className="font-16">Bilal</span>
                         </td>
                         {/* <td>Music</td>
 												<td>ken@gmail.com</td>

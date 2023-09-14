@@ -30,7 +30,7 @@ class Dashboard extends Component {
 							<div className="header-action">
 								<h1 className="page-title">Dashboard</h1>
 								<ol className="breadcrumb page-breadcrumb">
-									<li className="breadcrumb-item"><span>Ericsson</span></li>
+									<li className="breadcrumb-item"><span>OBE Online Portal</span></li>
 									<li className="breadcrumb-item"><span>University</span></li>
 									<li className="breadcrumb-item active" aria-current="page">Dashboard</li>
 								</ol>
@@ -279,7 +279,7 @@ class Dashboard extends Component {
 																</div>
 															</td>
 															<td>
-																<div>Merri Diamond</div>
+																<div>Hamza</div>
 																<div className="text-muted">Science</div>
 															</td>
 															<td>199</td>
@@ -294,7 +294,7 @@ class Dashboard extends Component {
 																</div>
 															</td>
 															<td>
-																<div>Sara Hopkins</div>
+																<div>Ahmed</div>
 																<div className="text-muted">Mechanical</div>
 															</td>
 															<td>197</td>
@@ -309,7 +309,7 @@ class Dashboard extends Component {
 																</div>
 															</td>
 															<td>
-																<div>Allen Collins</div>
+																<div>Dawood</div>
 																<div className="text-muted">M.C.A.</div>
 															</td>
 															<td>197</td>
@@ -324,7 +324,7 @@ class Dashboard extends Component {
 																</div>
 															</td>
 															<td>
-																<div>Erin Gonzales</div>
+																<div>Arhum</div>
 																<div className="text-muted">Arts</div>
 															</td>
 															<td>194</td>
@@ -339,7 +339,7 @@ class Dashboard extends Component {
 																</div>
 															</td>
 															<td>
-																<div>Claire Peters</div>
+																<div>Sameer</div>
 																<div className="text-muted">Science</div>
 															</td>
 															<td>192</td>
@@ -354,7 +354,7 @@ class Dashboard extends Component {
 																</div>
 															</td>
 															<td>
-																<div>Claire Peters</div>
+																<div>Kashan</div>
 																<div className="text-muted">Science</div>
 															</td>
 															<td>192</td>
@@ -369,7 +369,7 @@ class Dashboard extends Component {
 																</div>
 															</td>
 															<td>
-																<div>Claire Peters</div>
+																<div>Bilal</div>
 																<div className="text-muted">Science</div>
 															</td>
 															<td>191</td>
@@ -430,8 +430,8 @@ class Dashboard extends Component {
 														<tbody>
 															<tr>
 																<td>1</td>
-																<td>Jens Brincker</td>
-																<td>Kenny Josh</td>
+																<td>Hamza</td>
+																<td>Ahmed</td>
 																<td>27/05/2016</td>
 																<td>
 																	<span className="tag tag-success">paid</span>
@@ -446,8 +446,8 @@ class Dashboard extends Component {
 															</tr>
 															<tr>
 																<td>2</td>
-																<td>Mark Hay</td>
-																<td> Mark</td>
+																<td>Dawood</td>
+																<td>Arhum</td>
 																<td>26/05/2018</td>
 																<td>
 																	<span className="tag tag-warning">unpaid</span>
@@ -462,8 +462,8 @@ class Dashboard extends Component {
 															</tr>
 															<tr>
 																<td>3</td>
-																<td>Anthony Davie</td>
-																<td>Cinnabar</td>
+																<td>Sameer</td>
+																<td>Kashan</td>
 																<td>21/05/2018</td>
 																<td>
 																	<span className="tag tag-success ">paid</span>
@@ -478,8 +478,8 @@ class Dashboard extends Component {
 															</tr>
 															<tr>
 																<td>4</td>
-																<td>David Perry</td>
-																<td>Felix </td>
+																<td>Bilal</td>
+																<td>Wapas</td>
 																<td>20/04/2019</td>
 																<td>
 																	<span className="tag tag-danger">unpaid</span>
@@ -494,8 +494,8 @@ class Dashboard extends Component {
 															</tr>
 															<tr>
 																<td>5</td>
-																<td>Anthony Davie</td>
-																<td>Beryl</td>
+																<td>Hammas</td>
+																<td>Wapas</td>
 																<td>24/05/2017</td>
 																<td>
 																	<span className="tag tag-success ">paid</span>

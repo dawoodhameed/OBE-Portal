@@ -212,11 +212,11 @@ class Header extends Component {
                                             read</span>
                                     </div>
                                 </div> */}
-                                {/* <div className={`dropdown d-flex${profileMenu ? ' show' : ''}`} >
+                                <div className={`dropdown d-flex${profileMenu ? ' show' : ''}`} >
                                     <span className="chip ml-3" onClick={() => profileMenuAction(!profileMenu)}>
                                         <span className="avatar"
                                             style={{ backgroundImage: "url(../assets/images/xs/avatar5.jpg)" }}></span>
-                                        George</span>
+                                        Hamza</span>
                                     <div className={`dropdown-menu dropdown-menu-right dropdown-menu-arrow${profileMenu ? ' show dProfile' : ''}`}>
                                         <Link className="dropdown-item" to="/pageProfile"><i
                                             className="dropdown-icon fe fe-user"></i> Profile</Link>
@@ -233,7 +233,7 @@ class Header extends Component {
                                         <Link className="dropdown-item" to="/login"><i
                                             className="dropdown-icon fe fe-log-out"></i> Sign out</Link>
                                     </div>
-                                </div> */}
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -103,7 +103,7 @@ export default class Contact extends Component {
 													</div>
 												</td>
 												<td>
-													<div><a href>Merri Diamond</a></div>
+													<div><a href>Hamza</a></div>
 													<div className="text-muted">+264-625-2583</div>
 												</td>
 												<td className="hidden-xs">
@@ -131,7 +131,7 @@ export default class Contact extends Component {
 													</div>
 												</td>
 												<td>
-													<div className="from"><a href>Sara Hopkins</a></div>
+													<div className="from"><a href>Dawood</a></div>
 													<div className="text-muted">+264-625-3333</div>
 												</td>
 												<td className="hidden-xs">
