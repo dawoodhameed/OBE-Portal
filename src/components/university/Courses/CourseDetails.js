@@ -45,7 +45,7 @@ export default class CourseDetails extends Component {
 												<tr>
 													<td><i className="fa fa-cc-visa text-danger"></i></td>
 													<td className="tx-medium">Fees</td>
-													<td className="text-right">$1,674</td>
+													<td className="text-right">Rs 1,674</td>
 												</tr>
 												<tr>
 													<td><i className="fa fa-users text-warning"></i></td>
